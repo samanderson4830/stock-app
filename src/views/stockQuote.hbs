@@ -1,0 +1,41 @@
+<title>{{ title }}</title>
+<!-- Editable table -->
+<div class="card">
+  <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Watchlist</h3>
+  <div class="card-body">
+    <div id="table" class="table-editable">
+ 
+      <table class="table table-bordered table-responsive-md table-striped text-center">
+        <thead>
+          <tr>
+            <th class="text-center">Ticker Symbol</th>
+            <th class="text-center">Open Price</th>
+            <th class="text-center">Day Range</th>
+            <th class="text-center">PE Ratio</th>
+            <th class="text-center">One Year Target</th>
+            <th class="text-center">Forward Dividend Yield</th>
+            <th class="text-center">Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+        {{#each quote }}
+            <tr>
+                <td class="pt-3-half" contenteditable="true">APPL</td>
+                <td class="pt-3-half" contenteditable="true">${{open}}</td>
+                <td class="pt-3-half" contenteditable="true">USD: {{ dayRange }}</td>
+                <td class="pt-3-half" contenteditable="true">{{ peRatio }}</td>
+                <td class="pt-3-half" contenteditable="true">${{ oneYearTargetEst }}</td>
+                <td class="pt-3-half" contenteditable="true">{{ forwardDividendYield }}</td>
+                <td>
+                <span class="table-remove">
+                  <button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button>
+                </span>
+                </td>
+            </tr>
+        {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- Editable table -->
