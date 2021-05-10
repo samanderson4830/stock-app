@@ -1,32 +1,24 @@
-<style>
-  body {
-    background: url("https://mdbootstrap.com/img/Photos/Others/img (50).jpg")no-repeat center center;
-    /* Center and scale the image nicely */
-    backface-visibility: visible;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-</style>
 <!--Grid row-->
 <div class="row">
   <!--Grid column-->
   <div class="col-md-6 mb-4 mb-md-0">
 
-    <h3 style="color:whitesmoke" class="font-weight-bold" >Material Design Blocks</h3>
+    <h3 style="color:black" class="font-weight-bold">Material Design Blocks</h3>
 
-    <p style="color:white" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente
+    <p style="color:black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente
       molestiae
       numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam, doloremque laborum.</p>
 
-    <h4 style="color:whitesmoke" class="font-weight-bold">Look Up Stock</h4>
+    <h4 style="color:black" class="font-weight-bold">Look Up Stock</h4>
 
-    <form class="form-inline mr-auto">
-      <input class="form-control mr-sm-0" type="text" placeholder="Search" aria-label="Search">
+    <form action="/controller/searchStock" method="GET" class="form-inline mr-auto">
+      <input id="symbol" name="symbol" class="form-control mr-sm-0" type="text" placeholder="Search"
+        aria-label="Search">
       <button class="btn btn-secondary btn-rounded btn-sm my-0" type="submit">Search</button>
     </form>
 
     <hr class="my-5">
-    <p style="color:whitesmoke" class="font-weight-bold">Login with:</p>
+    <p style="color:black" class="font-weight-bold">Login with:</p>
     <!--Facebook-->
 
     <a href="#" class="mx-1" role="button"><i class="fa fa-facebook"></i></a>
@@ -44,7 +36,7 @@
     <img src="https://mdbootstrap.com/img/Others/screens1.png" class="img-fluid" alt="">
   </div>
   <!--Grid column-->
-  
+
 </div>
 <!--Grid row-->
 <!--Section: Content-->

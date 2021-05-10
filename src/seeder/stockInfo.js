@@ -9,8 +9,9 @@ const yahooStockAPI = require('yahoo-stock-api');
 async function getStockQuote(ticker) {
     const info = [];
     const quote = await yahooStockAPI.getSymbol(ticker.symbol);
-    
+
     info.push({
+        ticker: ticker.symbol,
         open: quote.response.open,
         dayRange: quote.response.dayRange,
         peRatio: quote.response.peRatio,
